@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Festival 2024 - Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {    
+            background-color: #121212;
+            color: #fff;
+        }
+
+        header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    height: 60px;
+    width: 150px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 20px;
+    font-size: 18px;
+    position: relative;
+    font-weight: bold;
+}
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 20px;
+            font-size: 18px;
+            position: relative;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff4d00;
+        }
+
+        .signup a {
+            text-decoration: none;
+        }
+
+        .signup span {
+            padding: 10px 20px;
+            background-color: #ff4d00;
+            color: #fff;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .signup span:hover {
+            background-color: #e03a00;
+        }
+
+        .form-container {
+            background-color: #1e1e1e;
+            padding: 40px;
+            max-width: 500px;
+            margin: 100px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .form-container h2 {
+            font-size: 35px;
+            margin-bottom: 20px;
+            color: #ff4d00;
+            text-align: center;
+        }
+
+        .form-container label {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #fff;
+            display: block;
+        }
+
+        .form-container input, .form-container select {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #333;
+            color: #fff;
+            outline: none;
+        }
+
+        .form-container input:focus, .form-container select:focus {
+            border: 2px solid #ff4d00;
+        }
+
+        .form-container button {
+            width: 100%;
+            padding: 15px;
+            background-color: #ff4d00;
+            border: none;
+            border-radius: 30px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .form-container button:hover {
+            background-color: #e03a00;
+        }
+
+        .form-container p {
+            color: #fff;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .form-container p a {
+            color: #ff4d00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .form-container p a:hover {
+            color: #e03a00;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo"><a href="index.html"><img src="images/logo4.png" alt="Logo"></a></div>
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="lineup.html">LINEUP</a>
+        <a href="ticket.html">TICKETS</a>
+        <a href="contact.html">FAQ</a>
+    </nav>
+    <div class="signup">
+        <a href="signup.html"><span>SIGN UP</span></a>
+    </div>
+</header>
+
+<div class="form-container">
+    <h2>Sign Up for Music Festival 2024</h2>
+    <form action="#" method="POST">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <label for="ticket">Select Ticket Type</label>
+        <select id="ticket" name="ticket" required>
+            <option value="general">General Admission</option>
+            <option value="vip">VIP</option>
+        </select>
+
+        <button type="submit">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="login.html">Login here</a></p>
+</div>
+
+</body>
+</html>

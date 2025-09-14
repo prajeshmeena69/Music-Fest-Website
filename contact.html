@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Music Festival 2024</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #fff;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .logo img {
+            height: 60px;
+            width: 150px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 20px;
+            font-size: 18px;
+            position: relative;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff4d00;
+        }
+
+        .signup a {
+            text-decoration: none;
+        }
+
+        .signup span {
+            padding: 10px 20px;
+            background-color: #ff4d00;
+            color: #fff;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .signup span:hover {
+            background-color: #e03a00;
+        }
+
+        .faq-section {
+            padding: 50px;
+            background-color: #1a1a1a;
+            text-align: center;
+        }
+
+        .faq-section h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #ff4d00;
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #222;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .faq-item input[type="checkbox"] {
+            display: none;
+        }
+
+        .faq-item label {
+            font-size: 24px;
+            color: #fff;
+            cursor: pointer;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 20px;
+            background-color: #333;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            position: relative;
+            margin: 10px 0;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .faq-item label:hover {
+            background-color: #c15b2f;
+            color: #fff;
+        }
+
+        .faq-item label::before {
+            content: '+';
+            font-size: 28px;
+            color: #fff;
+            text-align: center;
+            line-height: 30px;
+            background-color: #ff4d00;
+            border-radius: 5px;
+            width: 30px;
+            height: 30px;
+            transition: transform 0.3s ease;
+            display: inline-block;
+        }
+
+        .faq-item input:checked + label::before {
+            transform: rotate(180deg);
+            content: '−';
+        }
+
+        .faq-item div {
+            padding: 15px 20px;
+            background-color: #444;
+            font-size: 16px;
+            display: none;
+            color: #fff;
+            border-radius: 10px;
+            text-align: left;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .faq-item input:checked + label + div {
+            display: block;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #f4b400;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html"><img src="images/logo4.png" alt="Logo"></a></div>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="lineup.html">LINEUP</a>
+            <a href="ticket.html">TICKETS</a>
+            <a href="contact.html">FAQ</a>
+        </nav>
+        <div class="signup"><a href="signup.html"><span>SIGN UP</span></a></div>
+    </header>
+
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <!-- FAQ 1 -->
+            <div class="faq-item">
+                <input type="checkbox" id="faq1">
+                <label for="faq1">What are the festival dates?</label>
+                <div>
+                    The festival will take place from May 15th to May 17th, 2024.
+                </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="faq-item">
+                <input type="checkbox" id="faq2">
+                <label for="faq2">How do I buy tickets?</label>
+                <div>
+                    Tickets can be purchased on our official website under the 'Tickets' section.
+                </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="faq-item">
+                <input type="checkbox" id="faq3">
+                <label for="faq3">What should I bring to the festival?</label>
+                <div>
+                    We recommend bringing comfortable clothes, sunscreen, a hat, and a water bottle. Don't forget your ticket!
+                </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="faq-item">
+                <input type="checkbox" id="faq4">
+                <label for="faq4">Is there food and drink available at the festival?</label>
+                <div>
+                    Yes, we have a variety of food trucks and drink stalls offering refreshments throughout the event.
+                </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="faq-item">
+                <input type="checkbox" id="faq5">
+                <label for="faq5">Can I bring my camera or video equipment?</label>
+                <div>
+                    Small cameras are allowed, but professional video equipment or cameras with large lenses are not permitted.
+                </div>
+            </div>
+
+            <!-- FAQ 6 -->
+            <div class="faq-item">
+                <input type="checkbox" id="faq6">
+                <label for="faq6">Are there any age restrictions for the festival?</label>
+                <div>
+                    The festival is open to all ages. However, children under 12 must be accompanied by an adult.
+                </div>
+            </div>
+
+            <!-- FAQ 7 -->
+            <div class="faq-item">
+                <input type="checkbox" id="faq7">
+                <label for="faq7">What if I lose my ticket?</label>
+                <div>
+                    If you lose your ticket, please contact our customer support immediately via email at <a href="mailto:support@kietmusicfest.com">support@kietmusicfest.com</a>.
+                </div>
+            </div>
+
+            <!-- FAQ 8 -->
+            <div class="faq-item">
+                <input type="checkbox" id="faq8">
+                <label for="faq8">Where can I find festival merchandise?</label>
+                <div>
+                    Merchandise will be available at dedicated stalls throughout the festival venue.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Music Fest | All rights reserved</p>
+    </footer>
+</body>
+</html>

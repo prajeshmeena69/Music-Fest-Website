@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lineup</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body {
+            background-color: #121212;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .logo img {
+            height: 60px;
+            width: 150px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff4d00;
+        }
+
+        .signup a {
+             text-decoration: none;
+}
+
+        .signup span {
+            padding: 10px 20px;
+            background-color: #ff4d00;
+            color: #fff;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .signup span:hover {
+            background-color: #e03a00;
+        }
+
+        .lineup {
+            display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Use 3 equal columns */
+    grid-template-rows: auto; 
+    gap: 30px;
+    padding: 10px 175px; /* Adjust padding to make it larger */
+    background-color: #121212;
+        }
+
+        .artist {
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid #ff4d00;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .artist:hover {
+            transform: scale(1.05);
+        }
+
+        .artist img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-bottom: 2px solid #a63403;
+        }
+
+        .artist h3 {
+            margin: 10px 0 0;
+            font-size: 20px;
+            color: #ff4d00;
+        }
+
+        footer {
+            background-color: #151111;
+            color: white;
+            text-align: center;
+
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ff4d00;
+        }
+        h1 {
+        font-size: 80px;
+        text-transform: uppercase;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        padding: 70px;
+        letter-spacing: 5px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        text-align: center;}
+        h2{
+        font-size: 99px;
+        text-decoration: underline;
+        text-decoration-color: #ff4d00;
+        text-decoration-style: wavy;
+        margin-top: 1px;;
+        margin-bottom: 105px;
+        }
+    </style>
+</head>
+<body>
+   <header>
+        <div class="logo"><a href="index.html"><img src="images/logo4.png" alt="Logo"></a></div>
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="lineup.html">LINEUP</a>
+        <a href="ticket.html">TICKETS</a>
+        <a href="contact.html">FAQ</a>
+    </nav>
+    <div class="signup"><a href="signup.html" ><span>SIGN UP</span></a></div>
+   </header>
+
+   <h1>Artist Line-up 2024</h1>
+        <section class="lineup">
+            <div class="artist">
+                <img src="images/pritam.png">
+                <h3>Pritam</h3>
+            </div>
+            <div class="artist">
+                <img src="images/image.png" alt="Artist 2">
+                <h3>When Chai Met Toast</h3>
+            </div>
+            <div class="artist">
+                <img src="images/Diljit.png" alt="Artist 3">
+                <h3>Diljit Dosanjh</h3>
+            </div>
+            <div class="artist">
+                <img src="images/Local.png">
+                <h3>The Local Train</h3>
+            </div>
+            <div class="artist">
+                <img src="images/Arijit.png" alt="Artist 5">
+                <h3>Arijit Singh</h3>
+            </div>
+            <div class="artist">
+                <img src="images/Anuv.png" alt="Artist 6">
+                <h3>Anuv Jain</h3>
+            </div>
+            <div class="artist">
+                <img src="images/AP.png" alt="Artist 7">
+                <h3>AP Dhillon</h3>
+            </div>
+            <div class="artist">
+                <img src="images/Usha.png" alt="Artist 8">
+                <h3>Usha Uthup</h3>
+            </div>
+            <div class="artist">
+                <img src="images/HanuMan.png" alt="Artist 9">
+                <h3>Hanumankind</h3>
+            </div>
+            
+        </section>
+   
+    <h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </h2>
+
+   <footer>
+    <p>&copy; 2024 Music Fest | All rights reserved</p>
+    
+</footer>
+</body>
+</html>
